@@ -7,8 +7,9 @@ export const Hero = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-up');
-          entry.target.style.opacity = '1'; // Ensure text stays visible
+          const element = entry.target as HTMLElement;
+          element.classList.add('animate-fade-up');
+          element.style.opacity = '1';
         }
       },
       { threshold: 0.1 }
