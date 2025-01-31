@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "iOS Delta Executer Direct Install",
     description: "A modern iOS sideloading solution.",
-    image: "https://placehold.co/600x400/png", // Using a placeholder since the provided image URL isn't directly accessible
+    image: "og-image.png", // Using a placeholder since the provided image URL isn't directly accessible
     category: "Development"
   }
 ];
