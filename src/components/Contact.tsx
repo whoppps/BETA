@@ -19,7 +19,7 @@ export const Contact = () => {
               className="focus:outline-none"
             >
               <img
-                src="/images/your-image.png"      // <-- Replace with your image path
+                src="public/IMG_0400.jpeg"      // <-- Replace with your image path
                 alt="Picture Button"
                 className="w-16 h-16 hover:scale-105 transition-transform"
               />
