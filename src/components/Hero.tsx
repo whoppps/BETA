@@ -8,6 +8,7 @@ export const Hero = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fade-up');
+          entry.target.style.opacity = '1'; // Ensure text stays visible
         }
       },
       { threshold: 0.1 }
@@ -27,7 +28,7 @@ export const Hero = () => {
         <span className="inline-block px-3 py-1 bg-primary/30 rounded-full text-sm font-medium mb-6 animate-fade-in">
           Welcome to my portfolio
         </span>
-        <h1 ref={titleRef} className="text-5xl md:text-6xl font-bold mb-6 opacity-0">
+        <h1 ref={titleRef} className="text-5xl md:text-6xl font-bold mb-6">
           Creating Digital
           <span className="block mt-2">Experiences</span>
         </h1>
