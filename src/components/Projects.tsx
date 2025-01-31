@@ -4,17 +4,10 @@ import { cn } from "@/lib/utils";
 const projects = [
   {
     id: 1,
-    title: "Digital Platform",
-    description: "A modern web application built with cutting-edge technologies.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    title: "iOS Delta Executer Direct Install",
+    description: "A modern iOS sideloading solution.",
+    image: "https://placehold.co/600x400/png", // Using a placeholder since the provided image URL isn't directly accessible
     category: "Development"
-  },
-  {
-    id: 2,
-    title: "Brand Identity",
-    description: "Complete brand identity design for a tech startup.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    category: "Design"
   }
 ];
 
@@ -29,7 +22,7 @@ export const Projects = () => {
           <h2 className="text-4xl font-bold mt-4">Featured Projects</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
