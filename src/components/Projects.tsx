@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "iOS Delta Executer Direct Install",
     description: "A modern iOS sideloading solution.",
-    image: "images.png", // Make sure this file is accessible in your public folder or update the path accordingly
+    image: "images.png",
     category: "Development"
   }
 ];
@@ -15,18 +15,18 @@ export const Projects = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="px-3 py-1 bg-primary/30 rounded-full text-sm font-medium">Portfolio</span>
-          <h2 className="text-4xl font-bold mt-4">Featured Projects</h2>
+          <span className="px-3 py-1 bg-primary/30 text-primary rounded-full text-sm font-medium">Portfolio</span>
+          <h2 className="text-4xl font-bold mt-4 text-foreground">Featured Projects</h2>
         </div>
 
         <div className="grid md:grid-cols-1 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative rounded-xl overflow-hidden"
+              className="group relative rounded-xl overflow-hidden bg-card"
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
@@ -50,10 +50,9 @@ export const Projects = () => {
                     <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
                     <p className="text-sm mt-2 opacity-90">{project.description}</p>
 
-                    {/* New Button */}
                     <button
                       onClick={() => window.open("https://whoppps.github.io/delta-direct/", "_blank")}
-                      className="mt-4 inline-block bg-primary px-4 py-2 text-sm font-medium text-white rounded hover:bg-primary-dark transition-colors"
+                      className="mt-4 inline-block bg-primary text-primary-foreground px-4 py-2 text-sm font-medium rounded hover:opacity-90 transition-colors"
                     >
                       Go to Delta Direct
                     </button>
@@ -67,4 +66,3 @@ export const Projects = () => {
     </section>
   );
 };
-
