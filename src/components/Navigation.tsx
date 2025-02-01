@@ -39,7 +39,7 @@ export const Navigation = () => {
     )}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <span className="text-xl font-semibold">Whoppps</span>
+          <span className="text-xl font-semibold">iOS Sideloading</span>
           <div className="space-x-8">
             {['home', 'about', 'projects', 'contact'].map((section) => (
               <button
