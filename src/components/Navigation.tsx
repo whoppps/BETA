@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -35,24 +36,25 @@ export const Navigation = () => {
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      scrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      scrolled ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <span className="text-xl font-semibold">iOS Sideloading</span>
-          <div className="space-x-8">
+          <span className="text-xl font-semibold dark:text-white">iOS Sideloading</span>
+          <div className="flex items-center space-x-8">
             {['home', 'about', 'projects', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
                 className={cn(
                   "capitalize text-sm font-medium transition-colors",
-                  activeSection === section ? "text-primary-foreground" : "text-gray-500 hover:text-gray-800"
+                  activeSection === section ? "text-primary-foreground dark:text-white" : "text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"
                 )}
               >
                 {section}
               </button>
             ))}
+            <ThemeToggle />
           </div>
         </div>
       </div>
