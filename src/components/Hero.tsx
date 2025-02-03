@@ -24,9 +24,9 @@ export const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent dark:from-primary/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background to-transparent dark:from-background/50" />
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
-        <span className="inline-block px-3 py-1 bg-primary/30 text-foreground rounded-full text-sm font-medium mb-6 animate-fade-in">
+        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6 animate-fade-in">
           Hello!!!
         </span>
         <h1 ref={titleRef} className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
