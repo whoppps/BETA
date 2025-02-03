@@ -7,6 +7,6 @@
     @apply border-gray-200;
   }
   body {
-    @apply bg-white text-black;
+    @apply bg-gradient-to-b from-white via-purple-50 to-blue-50;
   }
 }

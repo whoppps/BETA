@@ -39,7 +39,7 @@ export const Navigation = () => {
     )}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <span className="text-xl font-semibold">iOS Sideloading</span>
+          <span className="text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">iOS Sideloading</span>
           <div className="flex items-center space-x-8">
             {['home', 'about', 'projects', 'contact'].map((section) => (
               <button
@@ -48,8 +48,8 @@ export const Navigation = () => {
                 className={cn(
                   "capitalize text-sm font-medium transition-colors",
                   activeSection === section 
-                    ? "text-black" 
-                    : "text-gray-500 hover:text-black"
+                    ? "text-purple-600" 
+                    : "text-gray-500 hover:text-purple-600"
                 )}
               >
                 {section}
