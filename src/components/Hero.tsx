@@ -24,9 +24,9 @@ export const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-background to-transparent dark:from-background/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-transparent" />
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
-        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6 animate-fade-in">
+        <span className="inline-block px-3 py-1 border border-primary bg-background/50 text-primary rounded-full text-sm font-medium mb-6 animate-fade-in backdrop-blur-sm">
           Hello!!!
         </span>
         <h1 ref={titleRef} className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
@@ -38,7 +38,7 @@ export const Hero = () => {
         </p>
         <button
           onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-          className="px-8 py-3 bg-primary text-primary-foreground rounded-lg transition-all hover:scale-105"
+          className="px-8 py-3 bg-primary text-primary-foreground rounded-lg transition-all hover:scale-105 border border-primary"
         >
           Learn More
         </button>
