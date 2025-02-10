@@ -57,7 +57,7 @@ export const Projects = () => {
 
                     <button
                       onClick={() => window.open("https://whoppps.github.io/delta-direct/", "_blank")}
-                      className="mt-4 inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 text-sm font-medium rounded hover:opacity-90 transition-colors"
+                      className="mt-4 inline-block bg-gradient-to-r from-[#F2FCE2] to-[#7E69AB] text-white px-4 py-2 text-sm font-medium rounded hover:opacity-90 transition-colors"
                     >
                       Go to Delta Direct
                     </button>

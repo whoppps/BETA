@@ -30,7 +30,7 @@ export const Contact = () => {
 
               <button
                 onClick={() => window.open("https://discord.com/users/891514137857892362")}
-                className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all duration-300 flex items-center justify-center mx-auto space-x-2"
+                className="bg-gradient-to-r from-[#6E59A5] to-[#9b87f5] text-white px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all duration-300 flex items-center justify-center mx-auto space-x-2"
               >
                 <span>Connect on Discord</span>
               </button>

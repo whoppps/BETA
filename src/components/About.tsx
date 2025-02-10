@@ -18,7 +18,7 @@ export const About = () => {
           <div className="mt-8">
             <button
               onClick={() => window.open("https://github.com/whoppps", "_blank")}
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg transition-all hover:scale-105 hover:shadow-lg"
+              className="px-8 py-3 bg-gradient-to-r from-[#FEC6A1] to-[#FFDEE2] text-gray-800 rounded-lg transition-all hover:scale-105 hover:shadow-lg font-medium"
             >
               GitHub
             </button>

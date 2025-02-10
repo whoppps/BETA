@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 
 export const Hero = () => {
@@ -38,7 +39,7 @@ export const Hero = () => {
         </p>
         <button
           onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-          className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg transition-all hover:scale-105 hover:shadow-lg"
+          className="px-8 py-3 bg-gradient-to-r from-[#1EAEDB] to-[#0EA5E9] text-white rounded-lg transition-all hover:scale-105 hover:shadow-lg"
         >
           Learn More
         </button>
